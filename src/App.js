@@ -1,12 +1,22 @@
-import { ModuleDefault, ModuleNamed } from "./01_components";
+import {
+  ModuleDefault,
+  ModuleNamed,
+  ClassComponent,
+  FunctionalComponent,
+} from "./01_components";
+
+import { StateinClassComp } from "./02_state_n_props";
 
 // import {ModuleDefault,NamedModule} from './01_components'
 
 function App() {
   return (
     <div>
-      <ModuleDefault />
+      {/* <ModuleDefault />
       <ModuleNamed />
+      <FunctionalComponent />
+      <ClassComponent /> */}
+      <StateinClassComp />
     </div>
   );
 }
