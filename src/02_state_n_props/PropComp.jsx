@@ -1,22 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export default class PropComp extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            place:'kolkatta',
-            noOffaltuTokis:'unlimited'
-        }
-        console.log(props,'props data...')
-    }
+class ChildComp extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    const {noOffaltuTokis,place} = this.state
+    const { children, name } = this.props;
     return (
       <div>
-        i am a child component of State component 
-        {/* <p>in {this.state.place} there are {this.state.noOffaltuTokis} no of faltu tokis</p> */}
-        <p>in {place} there are {noOffaltuTokis} no of faltu tokis</p>
+        child component <br />
+        {name}
+        {children}
       </div>
-    )
+    );
   }
 }
+
+export default ChildComp;
