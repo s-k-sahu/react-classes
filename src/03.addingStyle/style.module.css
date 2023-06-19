@@ -1,0 +1,11 @@
+.xyz{
+    height: 200px;
+    width: 200px;
+    color: yellow;
+    background: red;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
