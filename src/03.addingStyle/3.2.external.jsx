@@ -12,5 +12,5 @@ import React, { Component } from "react";
 // }
 
 export default function ExternalCss() {
-  return <div className="xyz">this is external css component</div>;
+  return <div className="xyz text-3xl">this is external css component</div>;
 }
