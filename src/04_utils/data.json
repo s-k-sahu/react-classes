@@ -1,0 +1,53 @@
+[
+  {
+    "category": "electronics",
+    "mobile": {
+      "name": "samsung galaxy s23",
+      "price": "168000",
+      "features": {
+        "battery capacity": "5000mah",
+        "display": "super amoled",
+        "processor": "qualcomm",
+        "camera primary": "200MP",
+        "camera secondary": "32MP",
+        "ROM": "512GB",
+        "RAM": "16GB"
+      },
+      "rating": 4.5
+    }
+  },
+  {
+    "category": "electronics",
+    "mobile": {
+      "name": "vivo x60",
+      "price": "40000",
+      "features": {
+        "battery capacity": "4500mah",
+        "display": "super amoled",
+        "processor": "qualcomm",
+        "camera primary": "48MP",
+        "camera secondary": "32MP",
+        "ROM": "256GB",
+        "RAM": "16GB"
+      },
+      "rating": 4.5
+    }
+  },
+  {
+    "category": "electronics",
+    "mobile": {
+      "name": "Iphone 14Pro",
+      "price": "169000",
+      "features": {
+        "battery capacity": "2500mah",
+        "display": "super amoled",
+        "processor": "ios m15",
+        "camera primary": "48MP",
+        "camera secondary": "12MP",
+        "ROM": "256GB",
+        "RAM": "16GB"
+      },
+      "rating": 5
+    }
+  }
+]

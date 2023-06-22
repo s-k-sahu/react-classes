@@ -1,23 +1,16 @@
-import React from "react";
-import { Comp } from "./PropComp";
-import InlineCss from "./03.addingStyle/3.1.inline";
-import ExternalCss from "./03.addingStyle/3.2.external";
-// import './03.addingStyle/style.css'
-import styles from './03.addingStyle/style.module.css'
-import CssInJs from "./03.addingStyle/3.4.cssInjs";
-
+import React,{Fragment} from 'react'
+import Frgmt from './04_utils/4.1fragment'
+import Keys from './04_utils/4.2.key'
+import StateUpdate from './02_state_n_props/StateUpdate'
 
 function App() {
   return (
-    <div>
-      <ExternalCss/>
-      <InlineCss />
-      <CssInJs/>
-    </div>
-    // <Comp name='ashok' age='28'>
-    //   <div>asholk</div>
-    // </Comp>
-  );
+    <React.Fragment>
+      {/* <Frgmt/> */}
+      {/* <Keys/> */}
+      <StateUpdate/>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default App
