@@ -1,53 +1,59 @@
 [
   {
     "category": "electronics",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgPQqaR5wz9LNF0HZV5YnDPxK5iWipB0tmA&usqp=CAU",
     "mobile": {
       "name": "samsung galaxy s23",
       "price": "168000",
       "features": {
-        "battery capacity": "5000mah",
-        "display": "super amoled",
+        "battery_capacity": "5000mah",
+        "display": "amoled",
         "processor": "qualcomm",
-        "camera primary": "200MP",
-        "camera secondary": "32MP",
+        "camera_primary": "200MP",
+        "camera_secondary": "32MP",
         "ROM": "512GB",
         "RAM": "16GB"
       },
-      "rating": 4.5
+      "rating": 4.5,
+      "review": "Meet the new Galaxy S23 and S23+ in four colors. Share the epic with crisp Nightography for selfies and a long-lasting battery for smooth gaming."
     }
   },
   {
     "category": "electronics",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1P5x_lVIXZz9Enm5HejCZs9FJus_5pv8cDw&usqp=CAU",
     "mobile": {
       "name": "vivo x60",
       "price": "40000",
       "features": {
-        "battery capacity": "4500mah",
+        "battery_capacity": "4500mah",
         "display": "super amoled",
         "processor": "qualcomm",
-        "camera primary": "48MP",
-        "camera secondary": "32MP",
+        "camera_primary": "48MP",
+        "camera_secondary": "32MP",
         "ROM": "256GB",
         "RAM": "16GB"
       },
-      "rating": 4.5
+      "rating": 4.5,
+      "review": "Meet the new Galaxy S23 and S23+ in four colors. Share the epic with crisp Nightography for selfies and a long-lasting battery for smooth gaming."
     }
   },
   {
     "category": "electronics",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrMb8X8C60hON0F9ct2kBr25F-Kmo8hNoAKRmDu1s6HFpZGs4-HQaS9r1k8AZdFqStPs&usqp=CAU",
     "mobile": {
       "name": "Iphone 14Pro",
       "price": "169000",
       "features": {
-        "battery capacity": "2500mah",
+        "battery_capacity": "2500mah",
         "display": "super amoled",
         "processor": "ios m15",
-        "camera primary": "48MP",
-        "camera secondary": "12MP",
+        "camera_primary": "48MP",
+        "camera_secondary": "12MP",
         "ROM": "256GB",
         "RAM": "16GB"
       },
-      "rating": 5
+      "rating": 5,
+      "review": "Meet the new Galaxy S23 and S23+ in four colors. Share the epic with crisp Nightography for selfies and a long-lasting battery for smooth gaming."
     }
   }
 ]
