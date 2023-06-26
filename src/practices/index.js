@@ -6,7 +6,7 @@ class ProductPage extends Component {
   render() {
     return (
       <div className="container d-flex justify-content-center p-2 grid gap-3">
-        {Array.isArray(apiData) && apiData.map((elm) => <Cards elm={elm} />)}
+        {Array.isArray(apiData) && apiData.map((elm,i) => <Cards elm={elm} key={i}/>)}
       </div>
     );
   }

@@ -6,18 +6,23 @@ export default class Cards extends Component {
   }
   render() {
     const { elm } = this.props;
+    let USDollar = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "INR",
+    });
+
     return (
       <div className="card" style={{ width: "18rem" }}>
         <img
           src={elm?.img}
-          class="card-img-top"
+          className="card-img-top"
           alt="electronics"
           height={300}
         ></img>
         <div className="card-body">
           <h5 className="card-title">{elm?.mobile?.name.toUpperCase()}</h5>
           <p className="card-text">{elm?.mobile?.review}</p>
-          <h6>Price : Rs.{elm?.mobile?.price}</h6>
+          <h6>Price : {USDollar?.format(elm?.mobile?.price)}</h6>
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
