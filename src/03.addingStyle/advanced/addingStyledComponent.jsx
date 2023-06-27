@@ -8,7 +8,7 @@ export default class AddingStyledComponent extends Component {
       <div>
         <h1> using styled components </h1>
         <Heading1 >
-          i am a component where styled-component styling is added!{" "}
+          i am a component where styled-component styling is added!
         </Heading1>
         <Heading2>i am a component where sass styling is added! </Heading2>
         <hr />
