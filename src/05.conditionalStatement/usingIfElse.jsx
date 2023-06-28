@@ -11,9 +11,10 @@ class UsingIfElse extends Component {
   }
 
   _onBtnClick() {
+    console.log('aaa')
     this.setState({
         ...this.state,
-        isValid:!this.state.isValid
+        isValid:true
     })
   }
 
