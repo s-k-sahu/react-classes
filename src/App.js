@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import { FetchDataUsingFetch } from "./07.datafetch";
+import { ParentComponent } from "./11.contextApi";
 
 function App() {
   return (
     <Fragment>
-      <FetchDataUsingFetch />
+      <ParentComponent />
     </Fragment>
   );
 }
