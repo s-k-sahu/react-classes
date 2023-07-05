@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import { ParentComponent } from "./11.contextApi";
+import { GrandParent } from "./11.contextApi";
 
 function App() {
   return (
     <Fragment>
-      <ParentComponent />
+      <GrandParent />
     </Fragment>
   );
 }
