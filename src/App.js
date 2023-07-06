@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import { GrandParent } from "./11.contextApi";
+import { ErrorBoundry } from "./06.lifecycleMethods";
 
 function App() {
   return (
     <Fragment>
-      <GrandParent />
+      <ErrorBoundry />
     </Fragment>
   );
 }
