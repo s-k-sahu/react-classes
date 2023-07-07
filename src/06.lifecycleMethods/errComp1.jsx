@@ -19,13 +19,13 @@ class ErrComp1 extends Component {
   render() {
     const { count } = this.state;
     if(count > 5 ){
-        throw new Error('error in err component 1')
+        throw new Error('error happened in count component ')
     }
     return (
       <div>
-        error component , count : {this.props.title} - {count}
+        <h1> count : {this.props.title} - <span className="text-danger">{count}</span></h1>
         <br />
-        <button onClick={() => this.handleClick()}>click</button>
+        <button onClick={() => this.handleClick()} className="btn btn-success">click</button>
       </div>
     );
   }

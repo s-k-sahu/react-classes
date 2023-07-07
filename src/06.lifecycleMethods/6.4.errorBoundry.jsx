@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { ErrComp1, ErrComp2, ErrComp3 } from ".";
+import { ErrComp1 } from ".";
 import ErrorBoundry from "./errComponent";
 class ErComp extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <ErrorBoundry>
           <ErrComp1 title="first" />
         </ErrorBoundry>
