@@ -1,34 +1,37 @@
 import React, { Component } from "react";
 
-class ErrComponent extends Component {
+class ErrorBoundry extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      error: false,
-      message: "",
+      error: null,
+      message: null,
     };
   }
 
   static getDerivedStateFromError(err) {
-    if (err) {
-      return { error: true, message: err.toString() };
-    }
+    err["shouldIgnore"] = true;
+    return { error: err };
   }
 
   componentDidCatch(error, errorInfo) {
-    this.logErrorToServices(error, errorInfo.componentStack);
+    this.setState({
+      error,
+      message: errorInfo,
+    });
   }
-
-  logErrorToServices = console.log;
 
   render() {
     const { error, message } = this.state;
-    if (error) {
-      <div>{message}</div>;
+    if (message) {
+      <>
+        <div>{error}</div>
+        {message.componentStack}
+      </>;
     }
     return <div>{this.props.children}</div>;
   }
 }
 
-export default ErrComponent;
+export default ErrorBoundry;

@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
-import { ErrorBoundry } from "./06.lifecycleMethods";
+import { ErrorBoundry, ErrorComponent } from "./06.lifecycleMethods";
 
 function App() {
   return (
     <Fragment>
-      <ErrorBoundry />
+      <ErrorComponent>
+        <ErrorBoundry />
+      </ErrorComponent>
     </Fragment>
   );
 }

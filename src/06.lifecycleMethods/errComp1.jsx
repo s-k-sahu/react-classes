@@ -12,19 +12,18 @@ class ErrComp1 extends Component {
 
   handleClick() {
     this.setState({
-      ...this.state,
       count: this.state.count + 1,
     });
   }
 
   render() {
     const { count } = this.state;
-    if(count === 5 ){
+    if(count > 5 ){
         throw new Error('error in err component 1')
     }
     return (
       <div>
-        error in component 1, count : {count}
+        error component , count : {this.props.title} - {count}
         <br />
         <button onClick={() => this.handleClick()}>click</button>
       </div>

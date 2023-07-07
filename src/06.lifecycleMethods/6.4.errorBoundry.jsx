@@ -1,28 +1,19 @@
 import React, { Component } from "react";
-import { ErrComp1, ErrComp2, ErrComp3, ErrorComponent } from ".";
-class ErrorBoundry extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
+import { ErrComp1, ErrComp2, ErrComp3 } from ".";
+import ErrorBoundry from "./errComponent";
+class ErComp extends Component {
   render() {
     return (
       <div>
-        <ErrorComponent>
-          <ErrComp1 />
-        </ErrorComponent>
-        <br />
-        <ErrorComponent>
-          <ErrComp2 />
-        </ErrorComponent>
-        <br />
-        <ErrorComponent>
-          <ErrComp3 />
-        </ErrorComponent>
+        <ErrorBoundry>
+          <ErrComp1 title="first" />
+        </ErrorBoundry>
+        <ErrorBoundry>
+          <ErrComp1 title="second" />
+        </ErrorBoundry>
       </div>
     );
   }
 }
 
-export default ErrorBoundry;
+export default ErComp;
