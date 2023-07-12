@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import { ErrorBoundry, ErrorComponent } from "./06.lifecycleMethods";
+import { UseStateHook } from "./12.hooks";
 
 function App() {
   return (
     <Fragment>
-      <ErrorBoundry />
+      <UseStateHook />
     </Fragment>
   );
 }
