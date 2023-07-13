@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import { UseStateHook } from "./12.hooks";
+import { UseStateHook,UseReducerHook } from "./12.hooks";
 
 function App() {
   return (
     <Fragment>
-      <UseStateHook />
+      <UseReducerHook/>
     </Fragment>
   );
 }
